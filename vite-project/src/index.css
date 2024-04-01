@@ -13,6 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+hr {
+  margin: 0;
+}
+
+#divprincipal {
+  padding-right: 50%;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -24,14 +32,12 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.5rem;
   line-height: 1.1;
 }
 
