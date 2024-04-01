@@ -13,6 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#babab {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
 hr {
   margin: 0;
 }
