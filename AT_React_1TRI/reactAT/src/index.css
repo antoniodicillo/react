@@ -11,6 +11,37 @@ body {
   padding: 20px;
 }
 
+.cardCoiso {
+  width: '25%';
+  padding: 0.75rem;
+  padding-right: 1rem;
+  padding-left: 1.25rem;
+  justify-content: start;
+  align-items: start;
+  border-radius: 10px;
+} 
+
+.cardTitle {
+  width: 100%;
+  align-self: flex-start;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.shadow {
+  text-shadow: 50px 50px;
+}
+
+.button {
+  margin-top: 1rem;
+  background-color: #333333;
+  padding: 15px;
+  gap: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
 .navText {
   font-weight: 400;
   font-size: 1.5rem;

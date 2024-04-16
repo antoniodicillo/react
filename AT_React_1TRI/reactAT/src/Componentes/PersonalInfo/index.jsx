@@ -8,19 +8,7 @@ function PersonalInfo({ name, email, phone }) {
         Transforme suas ideias em filmes memoráveis: onde a criatividade
         encontra a simplicidade.
       </p>
-      <div
-        className="button"
-        style={{
-          marginTop: '1rem',
-          backgroundColor: "#333333",
-          borderRadius: "40px",
-          padding: '15px',
-          gap: '10px',
-          width: '40%',
-          display: 'flex',
-          justifyContent: 'center'
-        }}
-      >
+      <div className="button" style={{ borderRadius: '40px'}}>
         <a style={{ color: "white", fontWeight: "500" }}>Começar agora!</a>
       </div>
     </div>
