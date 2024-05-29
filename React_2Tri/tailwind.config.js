@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
      colors: {
-      'primary-sla': '#034562'
+      'corVerde': '#39A737'
      } 
     },
   },
