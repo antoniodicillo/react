@@ -1,12 +1,19 @@
-function MovieCard(dados) {
+import { Link } from 'react-router-dom'
 
-    const posterImagem = 'https://image.tmdb.org/t/p/w500'+dados.poster
+function MovieCard(dados) {
+  const posterImagem = 'https://image.tmdb.org/t/p/w500'+dados.poster
+
+  ".cardfilme a".on('click', function(e) {
     
+  })
+
     return ( 
         <>
-            <img src={posterImagem} alt="posterFilme" />
-            <h1 className="titulo-filme">{dados.titulo}</h1>
-            <p className="data-lancamento">{dados.lancamento}</p>
+        <Link onclick={()})>
+          <img src={posterImagem} alt="posterFilme" />
+          <h1 className="titulo-filme">{dados.titulo}</h1>
+          <p className="data-lancamento">{dados.lancamento}</p>
+        </Link>
         </>
      );
 }
