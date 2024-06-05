@@ -6,3 +6,30 @@
 body {
     font-family: 'Quicksand', sans-serif;
 }
+
+.filme-tipos-titulo {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-left: 2rem;
+}
+
+.lista-filmes {
+    display: flex;
+    align-items: start;
+    overflow: auto;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.card-filme {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-right: 0.5rem;
+    text-align: start;
+}
+
+.titulo-filme {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
