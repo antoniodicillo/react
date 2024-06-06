@@ -14,14 +14,8 @@ function Filmes() {
     .then((response) => response.json())
     .then((response) => setNovosFilmes(response.results))
     .catch((error) => console.log(error)),  
-  ]).then(console.log)
+  ]).then()
  
-    
-  
-    
-
-    
-
   return (
     <>
       <MovieList titulo="Mais Populares" filmes={filmes}/>
