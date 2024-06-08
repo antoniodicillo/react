@@ -49,6 +49,28 @@ body {
     font-weight: 600;
 }
 
-.imgFilmeBackground {
+.filmetextos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 2rem;
     width: 100%;
 }
+
+.filmeDetalhadoDiv {
+    display: flex;
+    position: relative;
+    height: 30rem;
+    color: black;
+    overflow: hidden;
+}
+
+.imgFilmeBackground {   
+    position: absolute;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    z-index: -5;
+    color: #66eb19;
+}
+

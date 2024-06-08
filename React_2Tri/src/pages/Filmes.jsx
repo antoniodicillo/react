@@ -4,7 +4,7 @@ import { useState } from "react";
 function Filmes() {
   const [filmes, setFilmes] = useState([]);
   const [novosFilmes, setNovosFilmes] = useState([]);
-
+  
   Promise.all([
     fetch("https://api.themoviedb.org/3/movie/popular?api_key=7c572a9f5b3ba776080330d23bb76e1e")
     .then((response) => response.json())
