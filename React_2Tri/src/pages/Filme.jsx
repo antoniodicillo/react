@@ -5,6 +5,7 @@ function Filme() {
   const [classificacao, setClassificacao] = useState([]);
 
   const brasil = 'BR'
+  let cor;
   let currentMovie = localStorage.getItem('Filme')
   let posterImagem = 'https://image.tmdb.org/t/p/original'
   
@@ -19,6 +20,15 @@ function Filme() {
     }
     return null;
   }
+
+  function corIndicativa() {
+    let objeto = document.getElementById('corClassificacao')
+    if(objeto.innerHTML=='14'){
+      cor = '#352356'
+    }
+    objeto.style.backgroundColor = '#353234'
+  }
+  
   
 
   Promise.all([
@@ -34,12 +44,12 @@ function Filme() {
 
   return (
     <>      
-      <div className="filmeDetalhadoDiv" >  
+      <div className="filmeDetalhadoDiv">  
         <img className='imgFilmeBackground' src={posterImagem+filmeDetails.backdrop_path} alt="" />
         <div className="filmetextos">
           <h1 className="text-white text-3xl mb-3">{filmeDetails.title}</h1>
-          <h1 className="text-white mb-3">{classificacao.certification}</h1>
-          <h1 className="text-white">{filmeDetails.overview}</h1>
+          <h1 className="text-white mb-3" id="corClassificacao" style={{backgroundColor: `${cor}`}}>{classificacao.certification}</h1>
+          <h1 className="text-white w-9/12">{filmeDetails.overview}</h1>
         </div>
       </div>
     </>

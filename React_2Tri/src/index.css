@@ -59,10 +59,12 @@ body {
 
 .filmeDetalhadoDiv {
     display: flex;
-    position: relative;
+    position: absolute;
     height: 30rem;
     color: black;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 100%;
 }
 
 .imgFilmeBackground {   
@@ -71,6 +73,5 @@ body {
     align-self: center;
     width: 100%;
     z-index: -5;
-    color: #66eb19;
 }
 
