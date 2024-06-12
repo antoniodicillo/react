@@ -59,7 +59,7 @@ body {
 
 .filmeDetalhadoDiv {
     display: flex;
-    position: absolute;
+    position: relative;
     height: 30rem;
     color: black;
     overflow: hidden;
@@ -85,6 +85,8 @@ body {
     width: 2.25rem;
     height: 2.25rem;
     margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .filmeCardNegocado {
@@ -95,3 +97,15 @@ body {
     height: 100%;
 }
 
+.ratingCard {
+    height: 40%;
+    width: 40%;
+    margin-left: 0.25rem;
+    align-self: center;
+}
+
+.filmeContainer {
+    display: flex;
+    flex-direction: column;
+    
+}
