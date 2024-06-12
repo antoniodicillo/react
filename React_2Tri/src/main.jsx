@@ -19,7 +19,7 @@ const router = createBrowserRouter(
       children: [
         {index:true,element:<Home/>},
         {path: "filmes",element:<Filmes/>},
-        {path: "filme",element:<Filme/>},
+        {path: "filme/:id",element:<Filme/>},
         {path: "sobre",element:<Sobre/>},
         {path: "contato",element:<Contato/>},
         {path: "*",element:<PageNotFound/>}
