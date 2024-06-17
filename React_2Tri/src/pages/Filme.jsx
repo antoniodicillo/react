@@ -13,7 +13,6 @@ function Filme() {
   let posterImagem = "https://image.tmdb.org/t/p/original";
 
   const corIndicativa = (cor, ratingTexto, certificacao) => {
-    ratingTexto.innerHTML = parseFloat(ratingTexto.innerHTML).toFixed(2);
     if (certificacao == "L") {
       cor.style.backgroundColor = "#45C630";
       return null;
@@ -109,13 +108,9 @@ function Filme() {
               </div>
               <div className="cardFilmesClass">
                 <h1 className="text-white mb-3 filmeCardNegocado" id="rating">
-                  {filmeDetails.vote_average}
+                  {Math.round(
+                    (filmeDetails.vote_average + Number.EPSILON) * 100) / 100}
                 </h1>
-                <img
-                  src="https://www.clker.com/cliparts/T/y/k/o/D/E/white-star.svg"
-                  className="ratingCard"
-                  alt=""
-                />
               </div>
             </div>
 

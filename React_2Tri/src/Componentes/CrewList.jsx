@@ -22,7 +22,7 @@ function CastList(dados) {
               alt="posterImagem"
             />
             <h1 className="titulo-filme">{pessoa.name}</h1>
-            <p className="data-lancamento">{'"' + pessoa.job + '"'}</p>
+            <p className="data-lancamento">{pessoa.job}</p>
           </div>
         ))}
       </div>
