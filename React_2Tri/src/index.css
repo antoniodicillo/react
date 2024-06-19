@@ -11,6 +11,13 @@ body {
     font-size: 1.35rem;
 }
 
+
+.imageNoticia {
+    object-fit: cover;
+    width: 50%;
+    height: 300px;
+}
+
 .navbarTroco {
     align-items: center;
     height: 5rem;
@@ -49,11 +56,26 @@ body {
     font-weight: 600;
 }
 
+.filmetextosPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 3rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
 .filmetextos {
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
     margin-top: 2rem;
+    width: 100%;
+}
+
+.backgroundSobre {
+    height: 28rem;
+    overflow: hidden;
     width: 100%;
 }
 

@@ -7,7 +7,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Filmes from './pages/Filmes.jsx'
 import Sobre from './pages/Sobre.jsx'
-import Contato from './pages/Contato.jsx'
 import PageNotFound from './pages/PageNotFound.jsx'
 import Filme from './pages/Filme.jsx'
 
@@ -21,7 +20,6 @@ const router = createBrowserRouter(
         {path: "filmes",element:<Filmes/>},
         {path: "filme/:id",element:<Filme/>},
         {path: "sobre",element:<Sobre/>},
-        {path: "contato",element:<Contato/>},
         {path: "*",element:<PageNotFound/>}
       ]
     }
