@@ -1,11 +1,27 @@
 import data from "../../artigos.json";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Home() {
+  const [search, setSearch] = useState([]);
+  console.log(search)
+
+
+
+  data.filter((filme) => {
+    if(filme.title.match(search)) {
+      filme.match = true
+    }
+  })
+  
   return (
     <>
+    <div className="w-100 mt-5 ms-6 me-6 border-2 flex">
+      <input style={{width: '100%'}} type="text" placeholder="Pesquise Aqui!" onChange={(e)=>setSearch(e.target.value)}/>   
+    </div>
       <div className="grid-cols-1 grid">
         {data.map((filme, index) => (
+          filme.title.match(search) ? (
           <>
             <hr className="mt-5"/>
             <Link to="/">
@@ -29,6 +45,7 @@ function Home() {
             </div>
             </Link>
           </>
+          ) : null
         ))}
       </div>
       <div className="mt-12"></div>
